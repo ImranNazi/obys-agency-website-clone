@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let id;
+      function t() {
+        let x = new Date();
+        console.log(x);
+      }
+      function start() {
+        console.log("will start in 1 sec..");
+        id = setInterval(t, 1000);
+      }
+      function stop() {
+        clearInterval(id);
+        console.log("ended!!");
+      }
+    </script>
+  </head>
+  <body>
+    <input type="button" value="date!!" onclick="start()" />
+    <input type="button" value="Stop!" onclick="stop()" />
+  </body>
+</html>

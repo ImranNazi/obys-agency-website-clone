@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let a = prompt("enter a int no.");
+      if (isNaN(a)) {
+        document.write("didnt input a numeric value");
+      } else {
+        let b = parseInt(a);
+        if (b < 0) {
+          document.write("it is -ve no.");
+        } else if (b < 10) {
+          document.write("its a single digit no.");
+        } else {
+          document.write("double digit no. with 3 or more digit..");
+        }
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
